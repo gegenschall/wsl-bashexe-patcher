@@ -1,5 +1,5 @@
 # WSL bash.exe patcher
-Patch WSL's bash.exe to execute arbitrary Linux executables from the WSL filesystem
+Patch Windows Subsystem for Linux's ("Ubuntu on Windows") bash.exe to execute arbitrary Linux executables from the WSL filesystem
 
 # Usage
 Supply the tool with the path to the original bash.exe (`C:\Windows\System32\bash.exe` by default) and give it the absolute path to a Linux ELF executable (e.g. `/bin/zsh`). You may optionally specify a name for the generated wrapper binary (e.g. `--output zsh.exe`).
