@@ -2,8 +2,9 @@
 Patch WSL's bash.exe to execute arbitrary Linux executables from the WSL filesystem
 
 # Usage
-Supply the tool with the path to the original bash.exe (`C:\Windows\System32\bash.exe` by default) and give it the absolute path to a Linux ELF executable (e.g. `/bin/zsh`).
-You may optionally specify a name for the generated wrapper binary (e.g. `--output zsh.exe`).
+Supply the tool with the path to the original bash.exe (`C:\Windows\System32\bash.exe` by default) and give it the absolute path to a Linux ELF executable (e.g. `/bin/zsh`). You may optionally specify a name for the generated wrapper binary (e.g. `--output zsh.exe`).
+
+The tool will then replace the call to `/bin/bash` with your custom binary and write a new exe file to the location you specified (default is `launcher.exe`) which you can run from Windows.
 
 Full, working example:
 ```
